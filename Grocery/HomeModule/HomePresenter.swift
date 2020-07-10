@@ -6,6 +6,8 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
+import Foundation
+
 protocol HomePresentation {
 
     func viewDidLoad()
@@ -28,6 +30,9 @@ extension HomePresenter: HomePresentation {
 
     func viewDidLoad() {
         let homeModel = interactor.getTitle()
-        view?.updateTitle(title: homeModel.title)
+
+        DispatchQueue.main.async {
+            self.view?.updateTitle(title: homeModel.title)
+        }
     }
 }

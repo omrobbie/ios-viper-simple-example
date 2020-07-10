@@ -10,7 +10,7 @@ import UIKit
 
 class HomeModuleBuilder {
 
-    func build() -> UIViewController {
+    static func build() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
         let interactor = HomeInteractor()
