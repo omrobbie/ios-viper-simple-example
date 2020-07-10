@@ -6,11 +6,19 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
+import UIKit
+
 protocol HomeRouting {
 
 }
 
 class HomeRouter {
+
+    var viewContoller: UIViewController
+
+    init(view: UIViewController) {
+        self.viewContoller = view
+    }
 
 }
 

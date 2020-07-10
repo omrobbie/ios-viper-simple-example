@@ -14,7 +14,7 @@ class HomeModuleBuilder {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
         let interactor = HomeInteractor()
-        let router = HomeRouter()
+        let router = HomeRouter(view: view)
         let presenter = HomePresenter(interactor: interactor, router: router)
         view.presenter = presenter
         return view
