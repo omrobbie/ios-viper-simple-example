@@ -13,6 +13,8 @@ class HomeModuleBuilder {
     func build() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        let presenter = HomePresenter()
+        view.presenter = presenter
         return view
     }
 }
