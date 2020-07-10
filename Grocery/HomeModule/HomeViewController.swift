@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Grocery
 //
 //  Created by omrobbie on 10/07/20.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+protocol HomeView {
 
 }
 
+class HomeViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+extension HomeViewController: HomeView {
+    
+}
