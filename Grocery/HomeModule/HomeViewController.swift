@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     var presenter: HomePresentation!
 
     override func viewDidLoad() {
+        presenter.viewDidLoad()
         super.viewDidLoad()
     }
 }

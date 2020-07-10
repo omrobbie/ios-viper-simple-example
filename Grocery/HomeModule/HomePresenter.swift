@@ -8,12 +8,22 @@
 
 protocol HomePresentation {
 
+    func viewDidLoad()
 }
 
 class HomePresenter {
+    var interactor: HomeUseCase
+    var router: HomeRouting
 
+    init(interactor: HomeUseCase, router: HomeRouting) {
+        self.interactor = interactor
+        self.router = router
+    }
 }
 
 extension HomePresenter: HomePresentation {
 
+    func viewDidLoad() {
+        
+    }
 }
