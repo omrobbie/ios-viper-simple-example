@@ -17,6 +17,7 @@
 		FCB6314424B80F9200C79882 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6314324B80F9200C79882 /* HomeRouter.swift */; };
 		FCB6314624B80FE000C79882 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6314524B80FE000C79882 /* HomeInteractor.swift */; };
 		FCB6314824B8104F00C79882 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6314724B8104F00C79882 /* HomeModel.swift */; };
+		FCB6314A24B8110600C79882 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6314924B8110600C79882 /* HomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FCB6314324B80F9200C79882 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		FCB6314524B80FE000C79882 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		FCB6314724B8104F00C79882 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		FCB6314924B8110600C79882 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FCB6314324B80F9200C79882 /* HomeRouter.swift */,
 				FCB6314524B80FE000C79882 /* HomeInteractor.swift */,
 				FCB6314724B8104F00C79882 /* HomeModel.swift */,
+				FCB6314924B8110600C79882 /* HomeModuleBuilder.swift */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB6314A24B8110600C79882 /* HomeModuleBuilder.swift in Sources */,
 				FCB6313124B80EC000C79882 /* HomeViewController.swift in Sources */,
 				FCB6312D24B80EC000C79882 /* AppDelegate.swift in Sources */,
 				FCB6314424B80F9200C79882 /* HomeRouter.swift in Sources */,
