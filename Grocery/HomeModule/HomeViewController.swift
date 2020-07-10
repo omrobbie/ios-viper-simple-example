@@ -8,11 +8,13 @@
 
 import UIKit
 
-protocol HomeView {
-
+protocol HomeView: class {
+    func updateTitle(title: String)
 }
 
 class HomeViewController: UIViewController {
+
+    @IBOutlet weak var lblTitle: UILabel!
 
     var presenter: HomePresentation!
 
@@ -23,5 +25,8 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeView {
-    
+
+    func updateTitle(title: String) {
+        lblTitle.text = title
+    }
 }

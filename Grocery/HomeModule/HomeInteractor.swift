@@ -7,7 +7,8 @@
 //
 
 protocol HomeUseCase {
-
+    
+    func getTitle() -> HomeModel
 }
 
 class HomeInteractor {
@@ -16,4 +17,7 @@ class HomeInteractor {
 
 extension HomeInteractor: HomeUseCase {
 
+    func getTitle() -> HomeModel {
+        return HomeModel(title: "Hello World!")
+    }
 }

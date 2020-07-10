@@ -12,10 +12,13 @@ protocol HomePresentation {
 }
 
 class HomePresenter {
+
+    weak var view: HomeView?
     var interactor: HomeUseCase
     var router: HomeRouting
 
-    init(interactor: HomeUseCase, router: HomeRouting) {
+    init(view: HomeView, interactor: HomeUseCase, router: HomeRouting) {
+        self.view = view
         self.interactor = interactor
         self.router = router
     }
@@ -24,6 +27,7 @@ class HomePresenter {
 extension HomePresenter: HomePresentation {
 
     func viewDidLoad() {
-        
+        let homeModel = interactor.getTitle()
+        view?.updateTitle(title: homeModel.title)
     }
 }
